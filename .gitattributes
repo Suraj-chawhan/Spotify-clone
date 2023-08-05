@@ -1,0 +1,2 @@
+path/to/large/file.extension filter=lfs diff=lfs merge=lfs -text
+/spotify-cloneapp filter=lfs diff=lfs merge=lfs -text
