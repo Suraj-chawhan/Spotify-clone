@@ -34,7 +34,7 @@ export default function Search({music,musicBanner}){
      const d=c.map((value2)=>{
        return(
        
-       <Link href={`/${value2.singer}`} style={{width:120,height:150, backgroundColor:"#222222",borderRadius:10}} key={val.id}>
+       <Link href={`/${value2.singer}`} style={{width:120,height:150, backgroundColor:"#222222",borderRadius:10}} key={value2.id}>
       <div style={{display:"flex",flexDirection:"column",gap:10,padding:10}}>
       <Image src={`/${value2.musicbanner}`} width={100} height={100} alt="description banner"/>
       <p>{value2.title}</p>
