@@ -33,7 +33,7 @@ export default function OnClick({gotData,details,music}){
  const Play=()=>{
    
    if(!playing){
-     alert("Play call")
+     
      audioRef.current.play()
      setDisplayBottom(true)
    }
@@ -62,7 +62,7 @@ React.useEffect(()=>{
 //Particular click music play function on list
   function handleClick(id){
     
-    alert(music[current].title)
+    
     if(current===id){
       
       if(playing){

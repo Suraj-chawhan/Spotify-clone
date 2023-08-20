@@ -4,9 +4,8 @@ import Navbar from '../Component/Navbar.js'
 import Footer from '../Component/Footer.js'
 import { getLayout } from './[onClickdata]';
 import Sidebar from '../Component/Sidebar.js'
-import {Provider} from 'react-redux'
-import store from '../Component/Redux/Store.js'
-import {app} from   '../Component/Firebase.js'
+
+
 
 export default function App({ Component, pageProps }) {
 
@@ -16,13 +15,13 @@ export default function App({ Component, pageProps }) {
 
   if(Component.getLayout){
     return(
-      Component.getLayout(<Provider store={store}><Component{...pageProps}/></Provider>)
+      Component.getLayout(<Component{...pageProps}/>)
     )
   }
   
   
   return (
-    <Provider store={store}>
+    
     <div className={styles.app}>
     <Navbar/>
     <br/>
@@ -38,7 +37,7 @@ export default function App({ Component, pageProps }) {
     </div>
     </div>
     </div>
-    </Provider>
+    
     
     );
 }

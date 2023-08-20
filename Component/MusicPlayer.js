@@ -14,6 +14,7 @@ import {faForward,faBackward,faRepeat,faShuffle,faBack ,faChevronDown,faRepeat1}
    }){
  return(
  <div className={styles.playmusic}>
+ <div className={styles.playmusicInside}>
  <div className={styles.chevronTop}>
      <FontAwesomeIcon icon={faChevronDown}
      onClick={()=>{setShow(true)}} className={styles.back}
@@ -59,6 +60,7 @@ import {faForward,faBackward,faRepeat,faShuffle,faBack ,faChevronDown,faRepeat1}
   </div>
   </div>
   </div>:""}
+  </div>
  </div>
     );
   }

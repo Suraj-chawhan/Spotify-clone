@@ -5,13 +5,11 @@ import {faHome,faSearch} from '@fortawesome/free-solid-svg-icons'
 import {useRouter} from 'next/router'
 import styles from '../styles/home.module.css'
 import React from 'react'
-import {useSelector} from  'react-redux'
-import {useDispatch} from 'react-redux'
+
 
 
 export default function Sidebar(){
   const auth=getAuth(app);
-  const dispatch=useDispatch()
   const router=useRouter()
  const [user,setUser]=React.useState(false)
  

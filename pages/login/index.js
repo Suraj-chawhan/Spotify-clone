@@ -16,7 +16,7 @@ export default function LoginInterface(){
   const [password,setPassword]=React.useState("")
   const auth = getAuth(app);
   const[userPresent,setUserPresent]=React.useState(false)
-  const call=(bool)=>dispatch({type:"Change",payload:bool})
+  
   
   
  function Login(){

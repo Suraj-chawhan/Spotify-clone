@@ -5,7 +5,7 @@ import Banner from './Banner.js'
 export default function FindBanner({music,song}){
   
 const Music=music.filter(val=>val.musiccatagory===song)
-const getBanner=Music.map(val=><Banner val={val}/>)
+const getBanner=Music.map(val=><Banner val={val} key={val.id}/>)
   return(
     <div className={styles.musiclist}>
     {getBanner}

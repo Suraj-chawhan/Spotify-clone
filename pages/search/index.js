@@ -259,9 +259,7 @@ Search.getLayout=function PageLayout(page){
   return(
     <div className={styles.layout}>
     {page}
-    <div style={{display:"flex",justifyContent:"center"}}>
-    <Footer/>
-    </div>
+    
     </div>
     )
 }
