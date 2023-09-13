@@ -46,3 +46,12 @@ p{
   border:none;
   width:450px;
 }
+
+
+@media only screen and (min-width:900px) and (orientation:landscape){
+
+.link{
+font-size:10px;
+max-width:100px;
+}
+}

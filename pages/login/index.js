@@ -16,7 +16,7 @@ export default function LoginInterface(){
   const [password,setPassword]=React.useState("")
   const auth = getAuth(app);
   const[userPresent,setUserPresent]=React.useState(false)
-  
+  const[showPass,setShowPass]=React.useState(false)
   
   
  function Login(){
@@ -59,10 +59,14 @@ export default function LoginInterface(){
 <div className={styles.loginFormChildGrandChild}>
  <label style={{fontSize:30}}>Password</label>
  <input 
-  type="password" value={password} 
+  type={showPass?"text":"password"} value={password} 
   onChange={(e)=>setPassword(e.target.value)}
   placeholder="Enter Password"
    />
+   <div style={{display:"flex",gap:10,alignItems:"center",fontSize:20}}>
+    <h1>Show</h1>
+    <input type="checkbox" value={showPass} onChange={()=>setShowPass(val=>!val)} style={{width:25,height:28,backgroundColor:"blue"}}/> 
+  </div>
  <p style={{color:"red",fontSize:18}}>
  {error?"Wrong password please try again":"" || userPresent?"User not present please signup":""}
  </p>
@@ -100,3 +104,5 @@ LoginInterface.getLayout=function PageLayout(page){
     
     
     
+
+

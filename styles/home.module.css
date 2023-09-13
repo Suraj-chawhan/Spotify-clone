@@ -9,6 +9,11 @@
   gap:10px;
   
 }
+
+.descriptionImage{
+padding-left:175px;
+border-radius:2px;
+}
 .layout{
 background-color:#111222;
 margin:-10px;
@@ -490,9 +495,9 @@ background-color:blue;
 
 
 
-@media(min-width:600px){
+@media(min-width:768px){
   .app{
-   height:106vh;
+   height:200vh;
   }
   .bottomPlaymusic{
    width:100%;
@@ -500,8 +505,8 @@ background-color:blue;
   }
   
   .descriptionImage{
-    margin-left:300px;
-    border-radius:20px;
+    padding-left:150px;
+    border-radius:2px;
     width:350px;
     height:350px;
   }
@@ -553,18 +558,19 @@ background-color:blue;
   gap:20px;
 }
 .appMaxwidth{
-  width:520px;
+  width:100%;
   height:98.5vh;
   background-color:#111112;
   border-radius:15px;
+  padding:20px;
 }
 
 .footerMaxwidth{
-  width:440px;
+  width:100%;
   height:100.5vh;
   background-color:#111112;
   border-radius:15px;
-  
+  padding:20px;
 }
 
 .container{
@@ -604,22 +610,25 @@ background-color:blue;
 
 }
 
-@media only screen and (min-width:720px) and (orientation:landscape){
+
+
+
+@media only screen and (min-width:900px) and (orientation:landscape){
   .app{
-    height:400vh;
-    width:130%;
+    height:220vh;
+    width:101.28%;
+    
   }
   .layout{
-    width:130%;
-    height:400vh;
+    width:101.28%;
+    height:200vh;
   }
   
 .playmusic{
-  height:400vh;
+  height:200vh;
   position:absolute;
   background-color:#111222;
-  
- width:100%;
+  width:101.28%;
  display:flex;
  flex-direction:column;
  gap:50px;
@@ -630,18 +639,22 @@ background-color:blue;
   gap:60px;
 }
 .appMaxwidth{
-  width:650px;
-  height:380vh;
+  width:1200px;
+  height:200vh;
   background-color:#111112;
   border-radius:15px;
+  margin-left:10px;
 }
 
 .footerMaxwidth{
   width:500px;
-  height:380vh;
+  height:205vh;
   background-color:#111112;
   border-radius:15px;
-  
+  padding:20px;
+  margin-right:10px;
+  font-size: 15px;
+  flex-wrap:wrap;
 }
 
 .playmusicInside{
@@ -660,6 +673,14 @@ background-color:blue;
   gap:50px;
 }
 .errPageContainer{
- margin-top:100px;
+ margin-top:200px;
+}
+.appchildfooter >ul{
+  width:280px;
+ 
+}
+
+.descriptionImage{
+  padding-left:200px;
 }
 }
